@@ -541,7 +541,7 @@ export default {
           this.$refs.batchDialog.open(options);
         } else {
           // Finish
-          this.$router.push('/files');
+          this.readPreview();
         }
       });
     },
