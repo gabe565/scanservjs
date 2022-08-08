@@ -50,5 +50,8 @@ jobs:
           push: ${{ github.event_name != 'pull_request' }}
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
-          target: scanservjs-core
+          target: scanservjs-user2001
+          build-args: |
+            UID=1000
+            GID=1000
           platforms: linux/amd64,linux/arm64,linux/arm/v7
