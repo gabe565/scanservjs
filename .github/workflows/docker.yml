@@ -55,6 +55,6 @@ jobs:
           build-args: |
             UID=1000
             GID=1000
-          platforms: linux/amd64,linux/arm64,linux/arm/v7
+          platforms: linux/amd64
           cache-from: type=gha
           cache-to: type=gha,mode=max
